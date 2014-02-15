@@ -1,0 +1,23 @@
+This document describes the structure and architecture at the most basic level.
+
+Database:
+  Models:
+    User:
+      -id
+      -username
+      -password
+    Progress:
+      -user-id
+      -completed-todo-count
+      -completed-daily-count
+      -experience
+    Activity:
+      -id
+      -user-id
+      -task-description
+      -difficulty-level*
+    Todos:
+      -activity-id
+      -end-date (optional)
+    Dailies:
+      -activity-id
